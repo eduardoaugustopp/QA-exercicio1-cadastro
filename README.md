@@ -5,7 +5,11 @@
 
 ## Acesse
 
-<a href = "">Acesse clicando aqui</a>
+<a href = "https://qa-exercicio1-cadastro-registro-de-ponto.vercel.app/">Acesse clicando aqui</a>
+
+https://github.com/user-attachments/assets/41342c7e-5132-4b99-91d0-a9c45ce4f2ac
+
+https://github.com/user-attachments/assets/328fa49a-f5fb-4da8-bcc7-864bc0b0b3e7
 
 <h2>��Formação Carreira QA: processos e automação de testes / ALURA</h2>
 <p>
