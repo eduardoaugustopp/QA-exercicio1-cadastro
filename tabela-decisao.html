@@ -1,0 +1,77 @@
+<h2>Tabela de Decisão para o Teste de Cadastro</h2>
+<table class="decision-table">
+    <thead>
+        <tr>
+            <th>Cenário</th>
+            <th>Comportamento Esperado</th>
+            <th>Resultado Esperado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Campos Obrigatórios</strong></td>
+            <td>Os campos obrigatórios devem ser preenchidos corretamente.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>- Campos preenchidos corretamente</td>
+            <td>Cadastro bem-sucedido</td>
+            <td>Cadastro redireciona para a tela de login</td>
+        </tr>
+        <tr>
+            <td>- Campos em branco</td>
+            <td>Mensagem de erro é exibida</td>
+            <td>Erro: Campos obrigatórios faltando</td>
+        </tr>
+        <tr>
+            <td><strong>Validação de Senha</strong></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>- Senha com menos de 8 caracteres</td>
+            <td>Mensagem de erro é exibida</td>
+            <td>Erro: Senha muito curta</td>
+        </tr>
+        <tr>
+            <td>- Senha com 8 ou mais caracteres</td>
+            <td>Senha aceita</td>
+            <td>Continuar com o processo</td>
+        </tr>
+        <tr>
+            <td><strong>Confirmação de Senha</strong></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>- Senha e confirmação não correspondem</td>
+            <td>Mensagem de erro é exibida</td>
+            <td>Erro: Confirmação de senha não corresponde</td>
+        </tr>
+        <tr>
+            <td>- Senha e confirmação correspondem</td>
+            <td>Senha confirmada</td>
+            <td>Continuar com o processo</td>
+        </tr>
+        <tr>
+            <td><strong>Cadastro Bem-Sucedido</strong></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>- Campos preenchidos corretamente</td>
+            <td>Cadastro bem-sucedido</td>
+            <td>Redirecionar para a tela de login</td>
+        </tr>
+        <tr>
+            <td><strong>Mensagem de Erro</strong></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>- Situação de erro simulada</td>
+            <td>Mensagem de erro apropriada exibida</td>
+            <td>Feedback apropriado para o usuário</td>
+        </tr>
+    </tbody>
+</table>

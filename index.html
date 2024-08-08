@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE DE CADASTRO - REGISTRO DE PONTO</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="title">TESTE DE CADASTRO - REGISTRO DE PONTO</div>
+
+    <div id="formularioCadastro"></div>
+
+    <div class="title">Fluxograma</div>
+    <div id="mermaid" class="mermaid">
+        graph TD
+            A[Preparação]:::blueStyle --> B[Documentar Fluxograma]:::blueStyle
+            B --> C[Preparar Ambiente de Teste]:::blueStyle
+            C --> D[Criação de Casos de Teste]:::blueStyle
+            subgraph Teste de Campos Obrigatórios
+                E[Caso de Teste 1: Campos Obrigatórios]:::redStyle
+                E --> F[Acesse Tela de Cadastro]:::redStyle
+                F --> G[Deixe Campos em Branco]:::redStyle
+                G --> H[Envie o Formulário]:::redStyle
+                H --> I[Exibir Mensagem de Erro]:::redStyle
+                I --> J[Voltar para Tela de Cadastro]:::redStyle
+            end
+            subgraph Validação de Senha
+                K[Caso de Teste 2: Validação de Senha]:::redStyle
+                K --> L[Acesse Tela de Cadastro]:::redStyle
+                L --> M[Insira Senha Menor que 8 Caracteres]:::redStyle
+                M --> N[Envie o Formulário]:::redStyle
+                N --> O[Exibir Mensagem de Erro]:::redStyle
+                O --> P[Voltar para Tela de Cadastro]:::redStyle
+            end
+            subgraph Confirmação de Senha
+                Q[Caso de Teste 3: Confirmação de Senha]:::redStyle
+                Q --> R[Acesse Tela de Cadastro]:::redStyle
+                R --> S[Insira Senha e Confirmação Não Correspondentes]:::redStyle
+                S --> T[Envie o Formulário]:::redStyle
+                T --> U[Exibir Mensagem de Erro]:::redStyle
+                U --> V[Voltar para Tela de Cadastro]:::redStyle
+            end
+            subgraph Cadastro Bem-Sucedido
+                W[Caso de Teste 4: Cadastro Bem-Sucedido]:::greenStyle
+                W --> X[Acesse Tela de Cadastro]:::greenStyle
+                X --> Y[Preencha Campos Corretamente]:::greenStyle
+                Y --> Z[Envie o Formulário]:::greenStyle
+                Z --> AA[Redirecionar para Tela de Cadastro]:::greenStyle
+            end
+            subgraph Mensagem de Erro
+                AB[Caso de Teste 5: Mensagem de Erro]:::redStyle
+                AB --> AC[Acesse Tela de Cadastro]:::redStyle
+                AC --> AD[Simule Situação de Erro]:::redStyle
+                AD --> AE[Envie o Formulário]:::redStyle
+                AE --> AF[Exibir Mensagem de Erro Apropriada]:::redStyle
+            end
+            subgraph Execução dos Testes
+                AG[Execução dos Testes]:::orangeStyle
+                AG --> AH[Realizar os Testes]:::orangeStyle
+                AH --> AI[Registrar os Resultados]:::orangeStyle
+            end
+            subgraph Análise e Correção
+                AJ[Análise e Correção]:::orangeStyle
+                AJ --> AK[Analisar os Resultados]:::orangeStyle
+                AK --> AL[Identificar Falhas]:::orangeStyle
+                AL --> AM[Corrigir Problemas]:::orangeStyle
+                AM --> AN[Retestar]:::orangeStyle
+            end
+            subgraph Documentação Final
+                AO[Documentação Final]:::orangeStyle
+                AO --> AP[Documentar Resultados Finais]:::orangeStyle
+                AP --> AQ[Feedback]:::orangeStyle
+            end
+    
+            C --> D
+            D --> AG
+            AG --> AJ
+            AJ --> AO
+    </div>
+
+    <div id="tabelaDecisao"></div>
+
+    <div id="planoTeste"></div>
+
+</body>
+</html>
